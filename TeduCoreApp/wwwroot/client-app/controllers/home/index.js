@@ -69,5 +69,5 @@
             startWithSlide: 0,
             fullScreenOffsetContainer: ''
         });
-    }
-}
+    };
+};

@@ -3,7 +3,7 @@
     this.initialize = function () {
         loadAnnouncement();
         registerEvents();
-    }
+    };
 
     function registerEvents() {
         $('body').on('click', '.btn-edit', function (e) {
@@ -24,7 +24,6 @@
                     $('#txtDescription').val(data.Description);
                     $('#modal-add-edit').modal('show');
                     tedu.stopLoading();
-
                 },
                 error: function (status) {
                     tedu.notify('Có lỗi xảy ra', 'error');
@@ -32,9 +31,7 @@
                 }
             });
         });
-
-      
-    };
+    }
 
     function loadAnnouncement() {
         $.ajax({
@@ -59,12 +56,12 @@
                             Id: item.Id,
                             Title: item.Title,
                             FullName: item.FullName,
-                            Avatar:item.Avatar
+                            Avatar: item.Avatar
                         });
                     });
                     render += $('#announcement-tag-template').html();
                     $("#totalAnnouncement").text(response.RowCount);
-                    if (render != undefined) {
+                    if (render !== undefined) {
                         $('#annoncementList').html(render);
                     }
                 }
@@ -78,7 +75,5 @@
                 console.log(status);
             }
         });
-    };
-
-    
-}
+    }
+};

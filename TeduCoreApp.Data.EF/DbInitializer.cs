@@ -66,11 +66,11 @@ namespace TeduCoreApp.Data.EF
                 {
                     Id = CommonConstants.DefaultContactId,
                     Address ="No 36 Lane 133 Nguyen Phong Sac Cau Giay",
-                    Email = "pandashop@gmail.com",
-                    Name = "Panda Shop",
-                    Phone = "0942 324 543",
+                    Email = "belle@gmail.com",
+                    Name = "Belle Boutique",
+                    Phone = "0969696969",
                     Status = Status.Active,
-                    Website = "http://pandashop.com",
+                    Website = "https://www.facebook.com/cherry.luyen.756",
                     Lat = 21.0435009,
                     Lng = 105.7894758
                 });
@@ -242,7 +242,7 @@ namespace TeduCoreApp.Data.EF
                 {
                     Id = "HomeTitle",
                     Name = "Home's title",
-                    Value1 = "Tedu Shop home",
+                    Value1 = "Belle Boutique Home",
                     Status = Status.Active
                 });
             }
@@ -262,7 +262,7 @@ namespace TeduCoreApp.Data.EF
                 {
                     Id = "HomeMetaDescription",
                     Name = "Home Description",
-                    Value1 = "Home tedu",
+                    Value1 = "Home Belle",
                     Status = Status.Active
                 });
             }

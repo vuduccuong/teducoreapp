@@ -1,7 +1,7 @@
 ﻿var ContactController = function () {
     this.initialize = function () {
         registerEvent();
-    }
+    };
     function registerEvent() {
         initMap();
     }
@@ -26,4 +26,4 @@
         });
         infowindow.open(map, marker);
     }
-}
+};

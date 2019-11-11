@@ -53,10 +53,10 @@ namespace TeduCoreApp.WebApi
                 s.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
-                    Title = "TEDU Project",
-                    Description = "TEDU API Swagger surface",
-                    Contact = new Contact { Name = "ToanBN", Email = "tedu.international@gmail.com", Url = "http://www.tedu.com.vn" },
-                    License = new License { Name = "MIT", Url = "https://github.com/teduinternational/teducoreapp" }
+                    Title = "Belle Project",
+                    Description = "Belle Boutique API Swagger surface",
+                    Contact = new Contact { Name = "CuongVD", Email = "vuduccuong.ck48@gmail.com", Url = "https://fb.com/vuduc.cuong4" },
+                    License = new License { Name = "MIT", Url = "https://github.com/vuduccuong" }
                 });
             });
         }

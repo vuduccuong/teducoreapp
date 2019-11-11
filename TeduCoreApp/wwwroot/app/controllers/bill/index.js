@@ -364,7 +364,7 @@
                         });
                     });
                     $("#lbl-total-records").text(response.RowCount);
-                    if (render != undefined) {
+                    if (render !== undefined) {
                         $('#tbl-content').html(render);
 
                     }
@@ -395,7 +395,7 @@
     }
     function getBillStatusName(status) {
         var status = $.grep(cachedObj.billStatuses, function (element, index) {
-            return element.Value == status;
+            return element.Value === status;
         });
         if (status.length > 0)
             return status[0].Name;
