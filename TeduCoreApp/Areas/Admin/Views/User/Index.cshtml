@@ -5,7 +5,6 @@
     ViewData["Title"] = "User List";
 }
 @section Scripts{
-
     <script src="~/app/controllers/user/index.js" asp-append-version="true"></script>
     <script>
         var userObj = new UserController();
@@ -69,6 +68,7 @@
                     <div class="row">
                         <div class="col-sm-5">
                             <div class="dataTables_info" id="datatable-checkbox_info" role="status" aria-live="polite">
+                                Hiển thị 
                                 <select id="ddl-show-page">
                                     <option value="10" selected="selected">10</option>
                                     <option value="20">20</option>
@@ -76,9 +76,9 @@
                                     <option value="50">50</option>
                                 </select>
                                 <span class="item-per-page">
-                                    record/page.
-                                </span>
-                                Total record count: <strong id="lbl-total-records"></strong>
+                                    bản ghi
+                                </span><br/>
+                                Tổng số bản ghi: <strong id="lbl-total-records"></strong>
                             </div>
                         </div><div class="col-sm-7">
                             <div class="dataTables_paginate" id="datatable-checkbox_paginate">

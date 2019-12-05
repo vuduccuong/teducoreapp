@@ -108,5 +108,77 @@ namespace TeduCoreApp.Utilities.Helpers
             if (booAm) str = "Âm " + str;
             return str + "đồng chẵn";
         }
+
+        public static string GetBackDate(DateTime date)
+        {
+            var result = string.Empty;
+
+            var day = (DateTime.Now - date).Days;
+            var hour = (DateTime.Now - date).Hours;
+            var minute = (DateTime.Now - date).Minutes;
+            var second = (DateTime.Now - date).Seconds;
+
+            result = second + " giây trước";
+
+            if (minute > 0)
+            {
+                result = minute + " phút trước";
+            }
+
+            if (hour > 0)
+            {
+                result = hour + " giờ trước";
+            }
+
+            if (day > 0)
+            {
+                result = day + " ngày trước";
+            }
+
+            if (day > 30)
+            {
+                result = "vào ngày " + date.ToString("dd/MM/yyyy");
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Hàm format giá dạng 1.000.000
+        /// Author      Date        Action
+        /// CuongVD9    2019/29/09   Created
+        /// </summary>
+        /// <param name="price">Giá truyền vào kiểu decimal</param>
+        /// <returns>Chuỗi giá sau khi được format</returns>
+        public static string FormatPrice(decimal? price)
+        {
+            if (price.HasValue && price != 0)
+            {
+                string result = price.Value.ToString("#,#");
+                if (result.Contains(","))
+                    result = result.Replace(',', '.');
+                return result;
+            }
+            return "0";
+        }
+
+        /// <summary>
+        /// Hàm format giá dạng 1.000.000
+        /// Author      Date        Action
+        /// CuongVD9    2019/29/09   Created
+        /// </summary>
+        /// <param name="price">Giá truyền vào kiểu double</param>
+        /// <returns>Chuỗi giá sau khi được format</returns>
+        public static string FormatPrice(double? price)
+        {
+            if (price.HasValue && price != 0)
+            {
+                string result = price.Value.ToString("#,#");
+                if (result.Contains(","))
+                    result = result.Replace(',', '.');
+                return result;
+            }
+            return "0";
+        }
     }
 }

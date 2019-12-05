@@ -6,6 +6,7 @@ using TeduCoreApp.Application.ViewModels.Blog;
 using TeduCoreApp.Application.ViewModels.Common;
 using TeduCoreApp.Application.ViewModels.Product;
 using TeduCoreApp.Application.ViewModels.System;
+using TeduCoreApp.Application.ViewModels.TodoList;
 using TeduCoreApp.Data.Entities;
 
 namespace TeduCoreApp.Application.AutoMapper
@@ -38,6 +39,8 @@ namespace TeduCoreApp.Application.AutoMapper
             CreateMap<Feedback, FeedbackViewModel>().MaxDepth(2);
             CreateMap<Contact, ContactViewModel>().MaxDepth(2);
             CreateMap<Page, PageViewModel>().MaxDepth(2);
+
+            CreateMap<TodoList, TodoListViewModel>();
 
         }
     }

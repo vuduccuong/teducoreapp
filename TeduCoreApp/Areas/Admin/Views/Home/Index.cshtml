@@ -1,497 +1,233 @@
 ﻿@section Scripts{
-    <!-- Flot -->
-    <script src="~/lib/flot/jquery.flot.js"></script>
-    <script src="~/lib/flot/jquery.flot.pie.js"></script>
-    <script src="~/lib/flot/jquery.flot.time.js"></script>
-    <script src="~/lib/flot/jquery.flot.stack.js"></script>
-    <script src="~/lib/flot/jquery.flot.resize.js"></script>
-
-    <!-- Flot plugins -->
-    <script src="~/lib/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="~/lib/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="~/lib/flot.curvedlines/curvedLines.js"></script>
-    <!-- DateJS -->
-    <script src="~/lib/DateJS/build/date.js"></script>
-    <script src="~/app/controllers/home/index.js" asp-append-version="true"></script>
+    <!-- ChartJS -->
+    <script src="~/AdminLTE-3.0.0/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="~/AdminLTE-3.0.0/plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="~/AdminLTE-3.0.0/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="~/AdminLTE-3.0.0/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="~/AdminLTE-3.0.0/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="~/AdminLTE-3.0.0/plugins/moment/moment.min.js"></script>
+    <script src="~/AdminLTE-3.0.0/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="~/AdminLTE-3.0.0/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="~/AdminLTE-3.0.0/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="~/AdminLTE-3.0.0/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    @* Todo list *@
+    <script src="~/app/controllers/todo/index.js"></script>
     <script>
-        var homeObj = new HomeController();
-        homeObj.initialize();
+        var todoController = new TodoController();
+        todoController.initialize();
+    </script>
+    <script>
+
+            $('#calendar').datetimepicker({
+                format: 'L',
+                inline: true
+            })
+
     </script>
 }
-<div class="row top_tiles">
-    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <div class="tile-stats">
-            <div class="icon"><i class="fa fa-caret-square-o-right"></i></div>
-            <div class="count">179</div>
-            <h3>New Sign ups</h3>
-            <p>Lorem ipsum psdea itgum rixt.</p>
-        </div>
-    </div>
-    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <div class="tile-stats">
-            <div class="icon"><i class="fa fa-comments-o"></i></div>
-            <div class="count">179</div>
-            <h3>New Sign ups</h3>
-            <p>Lorem ipsum psdea itgum rixt.</p>
-        </div>
-    </div>
-    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <div class="tile-stats">
-            <div class="icon"><i class="fa fa-sort-amount-desc"></i></div>
-            <div class="count">179</div>
-            <h3>New Sign ups</h3>
-            <p>Lorem ipsum psdea itgum rixt.</p>
-        </div>
-    </div>
-    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <div class="tile-stats">
-            <div class="icon"><i class="fa fa-check-square-o"></i></div>
-            <div class="count">179</div>
-            <h3>New Sign ups</h3>
-            <p>Lorem ipsum psdea itgum rixt.</p>
-        </div>
-    </div>
+<input type="hidden" id="hid-user-id" value="@ViewBag.UID" />
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 text-dark">Dashboard</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Dashboard v1</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
 </div>
 
-<div class="row">
-    <div class="col-md-12">
-        <div class="x_panel">
-            <div class="x_title">
-                <h2>Transaction Summary <small>Weekly progress</small></h2>
-                <div class="filter">
-                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
-                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                        <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+<section class="content">
+    <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-info">
+                    <div class="inner">
+                        <h3>150</h3>
+
+                        <p>New Orders</p>
                     </div>
+                    <div class="icon">
+                        <i class="ion ion-bag"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
-                <div class="clearfix"></div>
             </div>
-            <div class="x_content">
-                <div class="col-md-9 col-sm-12 col-xs-12">
-                    <div class="demo-container" style="height:280px">
-                        <div id="chart_plot_02" class="demo-placeholder"></div>
-                    </div>
-                    <div class="tiles">
-                        <div class="col-md-4 tile">
-                            <span>Total Sessions</span>
-                            <h2>231,809</h2>
-                            <span class="sparkline11 graph" style="height: 160px;">
-                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                            </span>
-                        </div>
-                        <div class="col-md-4 tile">
-                            <span>Total Revenue</span>
-                            <h2>$231,809</h2>
-                            <span class="sparkline22 graph" style="height: 160px;">
-                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                            </span>
-                        </div>
-                        <div class="col-md-4 tile">
-                            <span>Total Sessions</span>
-                            <h2>231,809</h2>
-                            <span class="sparkline11 graph" style="height: 160px;">
-                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                            </span>
-                        </div>
-                    </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-success">
+                    <div class="inner">
+                        <h3>53<sup style="font-size: 20px">%</sup></h3>
 
+                        <p>Bounce Rate</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-stats-bars"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
-
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <div>
-                        <div class="x_title">
-                            <h2>Top Profiles</h2>
-                            <ul class="nav navbar-right panel_toolbox">
-                                <li>
-                                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li>
-                                            <a href="#">Settings 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Settings 2</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="close-link"><i class="fa fa-close"></i></a>
-                                </li>
-                            </ul>
-                            <div class="clearfix"></div>
-                        </div>
-                        <ul class="list-unstyled top_profiles scroll-view">
-                            <li class="media event">
-                                <a class="pull-left border-aero profile_thumb">
-                                    <i class="fa fa-user aero"></i>
-                                </a>
-                                <div class="media-body">
-                                    <a class="title" href="#">Ms. Mary Jane</a>
-                                    <p><strong>$2300. </strong> Agent Avarage Sales </p>
-                                    <p>
-                                        <small>12 Sales Today</small>
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="media event">
-                                <a class="pull-left border-green profile_thumb">
-                                    <i class="fa fa-user green"></i>
-                                </a>
-                                <div class="media-body">
-                                    <a class="title" href="#">Ms. Mary Jane</a>
-                                    <p><strong>$2300. </strong> Agent Avarage Sales </p>
-                                    <p>
-                                        <small>12 Sales Today</small>
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="media event">
-                                <a class="pull-left border-blue profile_thumb">
-                                    <i class="fa fa-user blue"></i>
-                                </a>
-                                <div class="media-body">
-                                    <a class="title" href="#">Ms. Mary Jane</a>
-                                    <p><strong>$2300. </strong> Agent Avarage Sales </p>
-                                    <p>
-                                        <small>12 Sales Today</small>
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="media event">
-                                <a class="pull-left border-aero profile_thumb">
-                                    <i class="fa fa-user aero"></i>
-                                </a>
-                                <div class="media-body">
-                                    <a class="title" href="#">Ms. Mary Jane</a>
-                                    <p><strong>$2300. </strong> Agent Avarage Sales </p>
-                                    <p>
-                                        <small>12 Sales Today</small>
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="media event">
-                                <a class="pull-left border-green profile_thumb">
-                                    <i class="fa fa-user green"></i>
-                                </a>
-                                <div class="media-body">
-                                    <a class="title" href="#">Ms. Mary Jane</a>
-                                    <p><strong>$2300. </strong> Agent Avarage Sales </p>
-                                    <p>
-                                        <small>12 Sales Today</small>
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-warning">
+                    <div class="inner">
+                        <h3>44</h3>
+
+                        <p>User Registrations</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-person-add"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-danger">
+                    <div class="inner">
+                        <h3>65</h3>
+
+                        <p>Unique Visitors</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-pie-graph"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
         </div>
-    </div>
-</div>
-
-
-
-<div class="row">
-    <div class="col-md-12">
-        <div class="x_panel">
-            <div class="x_title">
-                <h2>Weekly Summary <small>Activity shares</small></h2>
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="#">Settings 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Settings 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-            <div class="x_content">
-
-                <div class="row" style="border-bottom: 1px solid #E0E0E0; padding-bottom: 5px; margin-bottom: 5px;">
-                    <div class="col-md-7" style="overflow:hidden;">
-                        <span class="sparkline_one" style="height: 160px; padding: 10px 25px;">
-                            <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
-                        </span>
-                        <h4 style="margin:18px">Weekly sales progress</h4>
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+            <!-- Left col -->
+            <section class="col-lg-7 connectedSortable ui-sortable">
+               
+                <!-- TO DO List -->
+                <div class="card">
+                    <div class="card-header ui-sortable-handle" style="cursor: move;">
+                        <h3 class="card-title">
+                            <i class="ion ion-clipboard mr-1"></i>
+                            To Do List
+                        </h3>
+                        @*<div class="card-tools">
+            <ul class="pagination pagination-sm">
+                <li class="page-item"><a href="#" class="page-link">«</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">»</a></li>
+            </ul>
+        </div>*@
                     </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <ul class="todo-list ui-sortable" data-widget="todo-list" id="todo-list">
+                        </ul>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer clearfix">
+                        <button type="button" class="btn btn-info float-right" id="create-todo-item"><i class="fas fa-plus"></i> Add item</button>
+                    </div>
+                </div>
+                <!-- /.card -->
+            </section>
+            <!-- /.Left col -->
+            <!-- right col (We are only adding the ID to make the widgets sortable)-->
+            <section class="col-lg-5 connectedSortable ui-sortable">
+                <!-- Calendar -->
+                <div class="card bg-gradient-success">
+                    <div class="card-header border-0 ui-sortable-handle" style="cursor: move;">
 
-                    <div class="col-md-5">
-                        <div class="row" style="text-align: center;">
-                            <div class="col-md-4">
-                                <canvas class="canvasDoughnut" height="110" width="110" style="margin: 5px 10px 10px 0"></canvas>
-                                <h4 style="margin:0">Bounce Rates</h4>
+                        <h3 class="card-title">
+                            <i class="far fa-calendar-alt"></i>
+                            Calendar
+                        </h3>
+                        <!-- tools card -->
+                        <div class="card-tools">
+                            <!-- button with a dropdown -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                                <div class="dropdown-menu float-right" role="menu">
+                                    <a href="#" class="dropdown-item">Add new event</a>
+                                    <a href="#" class="dropdown-item">Clear events</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item">View calendar</a>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <canvas class="canvasDoughnut" height="110" width="110" style="margin: 5px 10px 10px 0"></canvas>
-                                <h4 style="margin:0">New Traffic</h4>
-                            </div>
-                            <div class="col-md-4">
-                                <canvas class="canvasDoughnut" height="110" width="110" style="margin: 5px 10px 10px 0"></canvas>
-                                <h4 style="margin:0">Device Share</h4>
-                            </div>
+                            <button type="button" class="btn btn-success btn-sm" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <!-- /. tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body pt-0">
+                        <!--The calendar -->
+                        <div id="calendar" style="width: 100%"><div class="bootstrap-datetimepicker-widget usetwentyfour">
+                            
+                               </div>
                         </div>
                     </div>
+                    <!-- /.card-body -->
                 </div>
-            </div>
+                <!-- /.card -->
+            </section>
+            <!-- right col -->
         </div>
-    </div>
-</div>
+        <!-- /.row (main row) -->
+    </div><!-- /.container-fluid -->
+</section>
+@Html.Partial("_AddEditModal.cshtml")
 
 
-
-<div class="row">
-    <div class="col-md-4">
-        <div class="x_panel">
-            <div class="x_title">
-                <h2>Top Profiles <small>Sessions</small></h2>
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="#">Settings 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Settings 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-            <div class="x_content">
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item One Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Three Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-            </div>
+<script id="table-template" type="x-tmpl-mustache">
+    <li class="{{statusx}}">
+        <!-- drag handle -->
+        <span class="handle ui-sortable-handle">
+            <i class="fas fa-ellipsis-v"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </span>
+        <!-- checkbox -->
+        <div 
+             class="icheck-primary d-inline ml-2" 
+             data-id="{{Id}}" 
+             data-status="{{Status}}" 
+             onclick="todoController.Update({{Id}}, {{Status}})">
+            <input type="checkbox" value="{{Id}}" name="{{Id}}" id="{{Id}}" {{check}}>
+            <label for="{{Id}}"></label>
         </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="x_panel">
-            <div class="x_title">
-                <h2>Top Profiles <small>Sessions</small></h2>
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="#">Settings 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Settings 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-            <div class="x_content">
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item One Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Three Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-            </div>
+        <!-- todo text -->
+        <span class="text" id="todo-{{Id}}">{{Content}}</span>
+        <!-- Emphasis label -->
+        <small class="badge badge-danger"><i class="far fa-clock"></i> {{CreatedDate}}</small>
+        <!-- General tools such as edit or delete-->
+        <div class="tools">
+            @*<i class="fas fa-edit" data-id="{{Id}}" ></i>*@
+            <i class="fas fa-trash-alt" data-id="{{Id}}" onclick="todoController.Delete({{Id}})"></i>
         </div>
-    </div>
+    </li>
+</script>
 
-    <div class="col-md-4">
-        <div class="x_panel">
-            <div class="x_title">
-                <h2>Top Profiles <small>Sessions</small></h2>
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="#">Settings 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Settings 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-            <div class="x_content">
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item One Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-                <article class="media event">
-                    <a class="pull-left date">
-                        <p class="month">April</p>
-                        <p class="day">23</p>
-                    </a>
-                    <div class="media-body">
-                        <a class="title" href="#">Item Three Title</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </div>
-</div>

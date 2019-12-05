@@ -1,7 +1,7 @@
 ﻿var BaseController = function () {
     this.initialize = function () {
         registerEvents();
-    },
+    }
 
         function registerEvents() {
             $('body').on('click', '.add-to-cart', function (e) {
@@ -21,7 +21,7 @@
                         loadHeaderCart();
                     }
                 });
-            });
+            })
 
             $('body').on('click', '.remove-cart', function (e) {
                 e.preventDefault();
@@ -38,9 +38,9 @@
                     }
                 });
             });
-        },
+        }
 
         function loadHeaderCart() {
             $("#headerCart").load("/AjaxContent/HeaderCart");
-        };
+        }
 };

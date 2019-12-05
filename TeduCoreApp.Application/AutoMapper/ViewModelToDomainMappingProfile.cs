@@ -6,6 +6,7 @@ using TeduCoreApp.Application.ViewModels.Blog;
 using TeduCoreApp.Application.ViewModels.Common;
 using TeduCoreApp.Application.ViewModels.Product;
 using TeduCoreApp.Application.ViewModels.System;
+using TeduCoreApp.Application.ViewModels.TodoList;
 using TeduCoreApp.Data.Entities;
 
 namespace TeduCoreApp.Application.AutoMapper
@@ -57,6 +58,8 @@ namespace TeduCoreApp.Application.AutoMapper
 
             CreateMap<AnnouncementUserViewModel, AnnouncementUser>()
                 .ConstructUsing(c => new AnnouncementUser(c.AnnouncementId,c.UserId,c.HasRead));
+            CreateMap<TodoListViewModel, TodoList>()
+                .ConstructUsing(c => new TodoList(c.ID,c.UserID, c.Content, c.CreatedDate, c.Status));
         }
     }
 }

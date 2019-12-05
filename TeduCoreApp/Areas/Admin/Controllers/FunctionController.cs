@@ -53,7 +53,7 @@ namespace TeduCoreApp.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetById(string id)
         {
-            var model = _functionService.GetAll(id);
+            var model = _functionService.GetById(id);
 
             return new ObjectResult(model);
         }

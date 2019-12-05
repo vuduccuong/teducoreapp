@@ -135,6 +135,34 @@
             }
         }
         return roots;
+    },
+    getBackDate : function (currentDateTime) {
+        let result = "";
+        currentDateTime = new Date(currentDateTime);
+        const day = Math.round((new Date() - currentDateTime) / (24 * 60 * 60 * 1000));
+        const hours = Math.round(((new Date() - currentDateTime) / 1000 / 60 / 60), 1);
+        const minute = Math.round((new Date() - currentDateTime) / 6000, 1);
+        const second = Math.round((new Date() - currentDateTime) / 1000, 1);
+
+        result = second + " giây trước";
+
+        if (minute > 0) {
+            result = minute + " phút trước";
+        }
+
+        if (hours > 0) {
+            result = hours + " giờ trước";
+        }
+
+        if (day > 0) {
+            result = day + " ngày trước";
+        }
+
+        if (day > 30) {
+            result = "vào ngày " + currentDateTime.getDate() + "/" + date.getMonth() + 1 + "/" + date.getFullYear();
+        }
+
+        return result;
     }
 }
 

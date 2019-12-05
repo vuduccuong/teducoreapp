@@ -21,6 +21,7 @@ namespace TeduCoreApp.Areas.Admin.Controllers
         public IActionResult Index()
         {
             var email = User.GetSpecificClaim("Email");
+            ViewBag.UID = User.GetUserId();
 
             return View();
         }

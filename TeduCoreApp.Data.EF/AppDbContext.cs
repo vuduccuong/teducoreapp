@@ -57,6 +57,7 @@ namespace TeduCoreApp.Data.EF
         public DbSet<AdvertistmentPage> AdvertistmentPages { get; set; }
         public DbSet<Advertistment> Advertistments { get; set; }
         public DbSet<AdvertistmentPosition> AdvertistmentPositions { get; set; }
+        public DbSet<TodoList> TodoLists { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

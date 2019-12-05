@@ -107,6 +107,7 @@ namespace TeduCoreApp
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<IViewRenderService, ViewRenderService>();
+            services.AddTransient<IViewRenderServicee, RenderViews>();
 
             services.AddTransient<DbInitializer>();
 
@@ -174,6 +175,7 @@ namespace TeduCoreApp
             services.AddTransient<IPageService, PageService>();
             services.AddTransient<IReportService, ReportService>();
             services.AddTransient<IAnnouncementService, AnnouncementService>();
+            services.AddTransient<ITodoListService, TodoListService>();
 
             services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
 
@@ -216,8 +218,6 @@ namespace TeduCoreApp
 
                 routes.MapRoute(name: "areaRoute",
                     template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
-
-
             });
 
         }
