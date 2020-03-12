@@ -1,0 +1,370 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Application\\TeduCoreApp.Application.csproj": {}
+  },
+  "projects": {
+    "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Application\\TeduCoreApp.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Application\\TeduCoreApp.Application.csproj",
+        "projectName": "TeduCoreApp.Application",
+        "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Application\\TeduCoreApp.Application.csproj",
+        "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
+        "outputPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data.EF\\TeduCoreApp.Data.EF.csproj": {
+                "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data.EF\\TeduCoreApp.Data.EF.csproj"
+              },
+              "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data\\TeduCoreApp.Data.csproj": {
+                "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data\\TeduCoreApp.Data.csproj"
+              },
+              "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj": {
+                "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "EPPlus.Core": {
+              "target": "Package",
+              "version": "[1.5.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data.EF\\TeduCoreApp.Data.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data.EF\\TeduCoreApp.Data.EF.csproj",
+        "projectName": "TeduCoreApp.Data.EF",
+        "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data.EF\\TeduCoreApp.Data.EF.csproj",
+        "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
+        "outputPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data\\TeduCoreApp.Data.csproj": {
+                "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data\\TeduCoreApp.Data.csproj"
+              },
+              "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Infrastructure\\TeduCoreApp.Infrastructure.csproj": {
+                "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Infrastructure\\TeduCoreApp.Infrastructure.csproj"
+              },
+              "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj": {
+                "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data\\TeduCoreApp.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data\\TeduCoreApp.Data.csproj",
+        "projectName": "TeduCoreApp.Data",
+        "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data\\TeduCoreApp.Data.csproj",
+        "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
+        "outputPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Infrastructure\\TeduCoreApp.Infrastructure.csproj": {
+                "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Infrastructure\\TeduCoreApp.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Infrastructure\\TeduCoreApp.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Infrastructure\\TeduCoreApp.Infrastructure.csproj",
+        "projectName": "TeduCoreApp.Infrastructure",
+        "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Infrastructure\\TeduCoreApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
+        "outputPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj",
+        "projectName": "TeduCoreApp.Utilities",
+        "projectPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj",
+        "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
+        "outputPath": "E:\\Đồ án\\teducoreapp\\TeduCoreApp.Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

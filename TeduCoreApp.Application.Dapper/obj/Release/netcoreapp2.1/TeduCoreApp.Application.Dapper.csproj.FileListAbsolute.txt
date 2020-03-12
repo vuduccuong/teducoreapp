@@ -1,0 +1,8 @@
+E:\Đồ án\teducoreapp\TeduCoreApp.Application.Dapper\bin\Release\netcoreapp2.1\TeduCoreApp.Application.Dapper.deps.json
+E:\Đồ án\teducoreapp\TeduCoreApp.Application.Dapper\bin\Release\netcoreapp2.1\TeduCoreApp.Application.Dapper.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Application.Dapper\bin\Release\netcoreapp2.1\TeduCoreApp.Application.Dapper.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Application.Dapper\obj\Release\netcoreapp2.1\TeduCoreApp.Application.Dapper.csprojAssemblyReference.cache
+E:\Đồ án\teducoreapp\TeduCoreApp.Application.Dapper\obj\Release\netcoreapp2.1\TeduCoreApp.Application.Dapper.AssemblyInfoInputs.cache
+E:\Đồ án\teducoreapp\TeduCoreApp.Application.Dapper\obj\Release\netcoreapp2.1\TeduCoreApp.Application.Dapper.AssemblyInfo.cs
+E:\Đồ án\teducoreapp\TeduCoreApp.Application.Dapper\obj\Release\netcoreapp2.1\TeduCoreApp.Application.Dapper.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Application.Dapper\obj\Release\netcoreapp2.1\TeduCoreApp.Application.Dapper.pdb

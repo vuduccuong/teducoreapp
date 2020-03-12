@@ -1,0 +1,17 @@
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\bin\Debug\netcoreapp2.1\TeduCoreApp.Application.deps.json
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\bin\Debug\netcoreapp2.1\TeduCoreApp.Application.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\bin\Debug\netcoreapp2.1\TeduCoreApp.Application.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\bin\Debug\netcoreapp2.1\TeduCoreApp.Data.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\bin\Debug\netcoreapp2.1\TeduCoreApp.Data.EF.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\bin\Debug\netcoreapp2.1\TeduCoreApp.Infrastructure.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\bin\Debug\netcoreapp2.1\TeduCoreApp.Utilities.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\bin\Debug\netcoreapp2.1\TeduCoreApp.Data.EF.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\bin\Debug\netcoreapp2.1\TeduCoreApp.Data.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\bin\Debug\netcoreapp2.1\TeduCoreApp.Utilities.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\bin\Debug\netcoreapp2.1\TeduCoreApp.Infrastructure.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\obj\Debug\netcoreapp2.1\TeduCoreApp.Application.csprojAssemblyReference.cache
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\obj\Debug\netcoreapp2.1\TeduCoreApp.Application.AssemblyInfoInputs.cache
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\obj\Debug\netcoreapp2.1\TeduCoreApp.Application.AssemblyInfo.cs
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\obj\Debug\netcoreapp2.1\TeduCoreApp.Application.csproj.CopyComplete
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\obj\Debug\netcoreapp2.1\TeduCoreApp.Application.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Application\obj\Debug\netcoreapp2.1\TeduCoreApp.Application.pdb

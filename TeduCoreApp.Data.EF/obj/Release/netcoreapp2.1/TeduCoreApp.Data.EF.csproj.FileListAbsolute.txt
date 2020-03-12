@@ -1,0 +1,17 @@
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\bin\Release\netcoreapp2.1\TeduCoreApp.Data.EF.deps.json
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\bin\Release\netcoreapp2.1\TeduCoreApp.Data.EF.runtimeconfig.json
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\bin\Release\netcoreapp2.1\TeduCoreApp.Data.EF.runtimeconfig.dev.json
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\bin\Release\netcoreapp2.1\TeduCoreApp.Data.EF.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\bin\Release\netcoreapp2.1\TeduCoreApp.Data.EF.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\bin\Release\netcoreapp2.1\TeduCoreApp.Data.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\bin\Release\netcoreapp2.1\TeduCoreApp.Infrastructure.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\bin\Release\netcoreapp2.1\TeduCoreApp.Utilities.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\bin\Release\netcoreapp2.1\TeduCoreApp.Data.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\bin\Release\netcoreapp2.1\TeduCoreApp.Infrastructure.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\bin\Release\netcoreapp2.1\TeduCoreApp.Utilities.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\obj\Release\netcoreapp2.1\TeduCoreApp.Data.EF.csprojAssemblyReference.cache
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\obj\Release\netcoreapp2.1\TeduCoreApp.Data.EF.AssemblyInfoInputs.cache
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\obj\Release\netcoreapp2.1\TeduCoreApp.Data.EF.AssemblyInfo.cs
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\obj\Release\netcoreapp2.1\TeduCoreApp.Data.EF.csproj.CopyComplete
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\obj\Release\netcoreapp2.1\TeduCoreApp.Data.EF.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Data.EF\obj\Release\netcoreapp2.1\TeduCoreApp.Data.EF.pdb

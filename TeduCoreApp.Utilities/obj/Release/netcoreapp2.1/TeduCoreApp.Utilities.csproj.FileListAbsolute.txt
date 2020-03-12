@@ -1,0 +1,8 @@
+E:\Đồ án\teducoreapp\TeduCoreApp.Utilities\bin\Release\netcoreapp2.1\TeduCoreApp.Utilities.deps.json
+E:\Đồ án\teducoreapp\TeduCoreApp.Utilities\bin\Release\netcoreapp2.1\TeduCoreApp.Utilities.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Utilities\bin\Release\netcoreapp2.1\TeduCoreApp.Utilities.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Utilities\obj\Release\netcoreapp2.1\TeduCoreApp.Utilities.csprojAssemblyReference.cache
+E:\Đồ án\teducoreapp\TeduCoreApp.Utilities\obj\Release\netcoreapp2.1\TeduCoreApp.Utilities.AssemblyInfoInputs.cache
+E:\Đồ án\teducoreapp\TeduCoreApp.Utilities\obj\Release\netcoreapp2.1\TeduCoreApp.Utilities.AssemblyInfo.cs
+E:\Đồ án\teducoreapp\TeduCoreApp.Utilities\obj\Release\netcoreapp2.1\TeduCoreApp.Utilities.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Utilities\obj\Release\netcoreapp2.1\TeduCoreApp.Utilities.pdb

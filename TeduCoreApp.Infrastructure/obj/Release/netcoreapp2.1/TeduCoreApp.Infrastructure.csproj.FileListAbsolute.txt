@@ -1,0 +1,8 @@
+E:\Đồ án\teducoreapp\TeduCoreApp.Infrastructure\bin\Release\netcoreapp2.1\TeduCoreApp.Infrastructure.deps.json
+E:\Đồ án\teducoreapp\TeduCoreApp.Infrastructure\bin\Release\netcoreapp2.1\TeduCoreApp.Infrastructure.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Infrastructure\bin\Release\netcoreapp2.1\TeduCoreApp.Infrastructure.pdb
+E:\Đồ án\teducoreapp\TeduCoreApp.Infrastructure\obj\Release\netcoreapp2.1\TeduCoreApp.Infrastructure.csprojAssemblyReference.cache
+E:\Đồ án\teducoreapp\TeduCoreApp.Infrastructure\obj\Release\netcoreapp2.1\TeduCoreApp.Infrastructure.AssemblyInfoInputs.cache
+E:\Đồ án\teducoreapp\TeduCoreApp.Infrastructure\obj\Release\netcoreapp2.1\TeduCoreApp.Infrastructure.AssemblyInfo.cs
+E:\Đồ án\teducoreapp\TeduCoreApp.Infrastructure\obj\Release\netcoreapp2.1\TeduCoreApp.Infrastructure.dll
+E:\Đồ án\teducoreapp\TeduCoreApp.Infrastructure\obj\Release\netcoreapp2.1\TeduCoreApp.Infrastructure.pdb
