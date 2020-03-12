@@ -22,11 +22,11 @@ namespace TeduCoreApp.Controllers.Components
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var categories = _memoryCache.GetOrCreate(CacheKeys.ProductCategories, entry => {
-                entry.SlidingExpiration = TimeSpan.FromHours(2);
-                return _productCategoryService.GetAll();
-            });
-            
+            //var categories = _memoryCache.GetOrCreate(CacheKeys.ProductCategories, entry => {
+            //    entry.SlidingExpiration = TimeSpan.FromHours(2);
+            //    return _productCategoryService.GetAll();
+            //});
+            var categories=_productCategoryService.GetAll();
             return View(categories);
         }
     }
